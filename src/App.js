@@ -1,17 +1,14 @@
 import React from 'react';
 import './App.css';
 
-import marked from 'marked';
+import Editor from './components/Editor';
 
 function App() {
-  function createMarkup() {
-    return { __html: marked('# Marked in the browser\n\nRendered by **marked**.') };
-  }
   return (
-    <div className="App">
-      <div dangerouslySetInnerHTML={createMarkup()} />
-    </div>
-  );
+    <>
+      <Editor />
+    </>
+  )
 }
 
 export default App;
