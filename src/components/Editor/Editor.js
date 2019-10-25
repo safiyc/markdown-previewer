@@ -1,4 +1,5 @@
 import React from 'react';
+// import * as S from './editorStyles';
 
 export default function Editor(props) {
   return (
